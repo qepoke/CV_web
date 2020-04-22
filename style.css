@@ -4,10 +4,6 @@ body{
 	font-family: Calibri, Arial, sans-serif;
 	background-color: #FAFAFA;
 }
-main{
-	display: flex;
-	flex-direction: row;
-}
 
 
 /*----------------------------------En-tête------------------------------*/
@@ -33,11 +29,12 @@ h1 strong{
 	color: #feca07;
 }
 #photo{
-	display : flex;
+	
+	display: flex;
 	width: 25%;
 	background-color: #2196F3;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	border-top-right-radius: 10px;
 }
 #wonderboy{
@@ -45,12 +42,17 @@ h1 strong{
 	height: 10em;
     border-radius: 50%;
 	box-shadow: 5px 2px 2px black;
-	margin: 30px;
+	margin: 20px;
 }
 
 
 
 /*-------------------------Sections-----------------------------*/
+main{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
 h2 span{
 	color: #feca07;
 	margin-right: 20px;
@@ -76,6 +78,7 @@ h2 span{
 	font-size: 1.1em;
 	text-align: center;
 	padding: 4px;
+
 }
 #contact p, #présentation p{
 	margin: 25px;
@@ -94,7 +97,7 @@ h2 span{
 #section_droite{
 	display: flex;
 	flex-direction: column;
-	width: 75%;
+	width: 100%;
 }
 .titre2{
 	border-bottom: 3px solid #feca07;
@@ -132,8 +135,81 @@ table{
 }
 .fa-js-square{
 	color: #E8D34D;
+	background-color: black;
 }
 .fa-github{
 	color: #1A1E22;
 }
 
+/*-------------------------Media Queries-------------------------*/
+@media screen and (min-width: 1500px) and (max-width: 2500px){
+	
+   
+}
+@media screen and (max-width: 1024px){
+	/*--HEADER--*/
+	header{
+		flex-direction: column;
+		background-color: #2196F3;
+		border-bottom-right-radius: 20px; 
+		border-bottom-left-radius: 20px;
+	}
+	h1{
+		font-size : 2.7em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-top: -25px;
+	}
+	header p{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#photo{
+		width: 100%;
+		justify-content: center;
+	}
+	#wonderboy{
+		width : 8em;
+		height: 8em;
+	}
+   	/*--Sections--*/
+	main{
+		flex-direction: column;
+	}
+
+   	/*Section gauche--*/
+	#section_gauche{
+		width : 100%;
+		order: 2;
+		border-bottom-right-radius: 0px;
+	}
+	#contact{
+		order: 3;
+	}
+	#contact p{
+		text-align: center;
+	}
+	#section_droite{
+		order: 1;
+		width: 100%;
+	}
+	#formations td, #expériences td{
+		padding-right: 100px;
+	
+	}
+	#compétences table{
+		
+		text-align: left;
+		padding-left: 0px;
+
+	}
+	.titre2
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width : 80%;
+		text-align: center;
+	}
+}
