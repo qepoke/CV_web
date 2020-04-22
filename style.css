@@ -1,87 +1,139 @@
-body
-{
+body{
 	width: 100%;
-	min-height: 100%;
 	margin : auto;
+	font-family: Calibri, Arial, sans-serif;
+	background-color: #FAFAFA;
 }
-
-/*Titres*/
-.titre2
-{
-	border-bottom: 2px solid #feca07;
-	padding-bottom: 10px;
-
-}
-.titre1
-{
-	margin-top: 0;
-	background-color: grey;
-	color: #feca07;
-}
-h2 span
-{
-	color: #feca07;
-	margin-right: 20px;
-	margin-left: 20px;
-}
-#titre strong
-{
-	color: #feca07;
-}
-u
-{
-	text-decoration-color: #feca07;
-}
-
-
-
-/*En-tête*/
-header
-{
-	display: flex;
-}
-h1
-{
-	text-transform: uppercase;
-	margin-left: 2em;
-	margin-top: 3em;
-}
-header p
-{
-	margin-left:1em;
-}
-#photo
-{
-	display : flex;
-	width: 32%;
-	background-color: #feca07;
-	justify-content: center;
-	align-items: center;
-}
-#wonderboy
-{
-	width : 8em;
-	height: 8em;
-    border-radius: 50%;
-	box-shadow: 5px 2px 2px black;
-}
-
-/*Section*/
-#bloc
-{
+main{
 	display: flex;
 	flex-direction: row;
 }
-#section_gauche
-{
+
+
+/*----------------------------------En-tête------------------------------*/
+header{
+	display: flex;
+}
+h1{
+	text-transform: uppercase;
+	font-size : 2.7em;
+	margin-left: 2em;
+	margin-top: 1.7em;
+	margin-bottom: -0.5em;
+	font-family : 'Calibri Light';
+}
+header p{
+	margin-left:3.5em;
+	font-size: 1.5em;
+}
+u{
+	text-decoration-color: #feca07;
+}
+h1 strong{
+	color: #feca07;
+}
+#photo{
+	display : flex;
+	width: 25%;
+	background-color: #2196F3;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 10px;
+}
+#wonderboy{
+	width : 10em;
+	height: 10em;
+    border-radius: 50%;
+	box-shadow: 5px 2px 2px black;
+	margin: 30px;
+}
+
+
+
+/*-------------------------Sections-----------------------------*/
+h2 span{
+	color: #feca07;
+	margin-right: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+
+/*-------------------------Section gauche------------------------*/
+#section_gauche{
 	display: flex;
 	flex-direction: column;
-	width : 32%;
-	background-color: #feca07;
+	width : 25%;
+	background-color: #2196F3;
+	border-bottom-right-radius: 10px;
 }
-#section_droite
-{
+.titre1{
+	margin-top: 0;
+	background-color: #3E2723;
+	color: #feca07;
+	font-family : Helvetica;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	text-align: center;
+	padding: 4px;
+}
+#contact p, #présentation p{
+	margin: 25px;
+	text-align: justify;
+}
+#icones_intérêts{
+	text-align: center;
+}
+#icones_intérêts span{
+	font-size: 2em;
+	margin-left: 20px;
+	margin-rigth: 20px;
+}
+
+/*-------------------------Section droite-------------------------*/
+#section_droite{
 	display: flex;
 	flex-direction: column;
-	width: 68%;
+	width: 75%;
 }
+.titre2{
+	border-bottom: 3px solid #feca07;
+	padding-bottom: 10px;
+	font-family : Helvetica;
+	text-transform: uppercase;
+	margin-left: 60px;
+	width: 70%;
+}
+#formations td, #expériences td{
+	font-style: normal;
+	padding-right: 150px;
+}
+table{
+	margin-left: 62px;
+}
+#formations td span, #expériences td span
+{
+	font-size: 0.6em;
+	margin-right: 10px;
+	color: #2196F3;
+}
+#compétences td span{
+	font-size: 2.2em;
+}
+#compétences td{
+	text-align: center;
+	padding-left: 45px;
+}
+.fa-html5{
+	color: #DE4B25;
+}
+.fa-css3-alt{
+	color: #3595CE;
+}
+.fa-js-square{
+	color: #E8D34D;
+}
+.fa-github{
+	color: #1A1E22;
+}
+
