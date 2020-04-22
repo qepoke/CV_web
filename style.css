@@ -1,5 +1,5 @@
 body{
-	width: 100%;
+	max-width: 1190px;
 	margin : auto;
 	font-family: Calibri, Arial, sans-serif;
 	background-color: #FAFAFA;
@@ -31,7 +31,7 @@ h1 strong{
 #photo{
 	
 	display: flex;
-	width: 25%;
+	width: 32%;
 	background-color: #2196F3;
 	align-items: center;
 	justify-content: center;
@@ -65,7 +65,7 @@ h2 span{
 #section_gauche{
 	display: flex;
 	flex-direction: column;
-	width : 25%;
+	width : 32%;
 	background-color: #2196F3;
 	border-bottom-right-radius: 10px;
 }
@@ -80,14 +80,21 @@ h2 span{
 	padding: 4px;
 
 }
-#contact p, #présentation p{
-	margin: 25px;
+#contact p, #propos p{
+	margin: 50px;
 	text-align: justify;
 }
-#icones_intérêts{
+#propos{
+	height: 780px;
+}
+#loisirs{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+#icones_loisirs{
 	text-align: center;
 }
-#icones_intérêts span{
+#icones_loisirs span{
 	font-size: 2em;
 	margin-left: 20px;
 	margin-rigth: 20px;
@@ -97,7 +104,7 @@ h2 span{
 #section_droite{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 68%;
 }
 .titre2{
 	border-bottom: 3px solid #feca07;
@@ -107,23 +114,23 @@ h2 span{
 	margin-left: 60px;
 	width: 70%;
 }
-#formations td, #expériences td{
+#formations td, #experiences td{
 	font-style: normal;
 	padding-right: 150px;
 }
 table{
 	margin-left: 62px;
 }
-#formations td span, #expériences td span
+#formations td span, #experiences td span
 {
 	font-size: 0.6em;
 	margin-right: 10px;
 	color: #2196F3;
 }
-#compétences td span{
+#competences td span{
 	font-size: 2.2em;
 }
-#compétences td{
+#competences td{
 	text-align: center;
 	padding-left: 45px;
 }
@@ -153,6 +160,7 @@ table{
 		background-color: #2196F3;
 		border-bottom-right-radius: 20px; 
 		border-bottom-left-radius: 20px;
+		box-shadow: 4px 4px 8px
 	}
 	h1{
 		font-size : 2.7em;
@@ -185,6 +193,9 @@ table{
 		order: 2;
 		border-bottom-right-radius: 0px;
 	}
+	#propos{
+		height: auto;
+	}
 	#contact{
 		order: 3;
 	}
@@ -195,13 +206,15 @@ table{
 		order: 1;
 		width: 100%;
 	}
-	#formations td, #expériences td{
+	#formations td, #experiences td{
 		padding-right: 100px;
 	
 	}
-	#compétences table{
+	#competences table{
 		
-		text-align: left;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 		padding-left: 0px;
 
 	}
