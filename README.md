@@ -1,2 +1,2 @@
 # CV_web
- CV_Quentin-Chollet_pageweb
+Projet n°2 : Transformation d'une maquette en page web
